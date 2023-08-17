@@ -1,0 +1,9 @@
+<!-- twitter-feed.component.html -->
+<div class="twitter-feed" (scroll)="onScroll()">
+  <ng-container *ngFor="let tweet of tweets">
+    <div class="tweet">
+      <img [src]="tweet.image" width="50px" />
+      <div class="tweet-text">{{ tweet.text }}</div>
+    </div>
+  </ng-container>
+</div>
